@@ -162,4 +162,8 @@ cython_debug/
 #.idea/
 
 
-.pdf
+#Ignore pdf file
+*.pdf
+
+#Ignore the path for assignments
+/assignments
