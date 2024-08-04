@@ -20,4 +20,4 @@ with random_function() as value:
 file_container = []
 for x in range(100000):
     with open(r".\code\harry_potter_goblet_of_fire.txt") as file:
-        print(file.readline())
+        file_container.append(file)
