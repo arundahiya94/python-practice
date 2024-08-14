@@ -57,9 +57,24 @@ numbers = [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 13, 17, 19, 23, 256, -8, -4, -2, 5, -
 
 # fruits = ['mango', 'kiwi', 'strawberry', 'guava', 'pineapple', 'mandarin orange', 'appl']
 
-set 
-fruits_with_more_than_two_vowels = [fruit for fruit in fruits if len(set(fruit).intersection('aeiou')) >= 2]
-print(fruits_with_more_than_two_vowels)
+# set 
+# fruits_with_more_than_two_vowels = [fruit for fruit in fruits if len(set(fruit).intersection('aeiou')) >= 2]
+# print(fruits_with_more_than_two_vowels)
 
 # for fruit in fruits:
 #     print(set(fruit).intersection('aeiou'))
+
+cityDict = {"New Delhi" : 40, "Mumbai" : 25, "Shimla" : 10, "Leh": 0}
+
+newDict = {key:value for (key,value) in cityDict.items() if value >= 25}
+print(newDict)
+
+
+newDict2 = {key:((value+5)) for (key,value) in cityDict.items()}
+print(newDict2)
+
+def sumOfValue(value):
+    return  value + value
+
+newDict3 = {key:(sumOfValue(value)) for (key,value) in cityDict.items()}
+print(newDict3)
