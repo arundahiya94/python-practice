@@ -167,3 +167,12 @@ cython_debug/
 
 #Ignore the path for assignments
 /assignments
+
+# Ignore csv files
+*.csv
+
+# Ignore txt files
+*.txt
+
+# Ignore json files
+*.json
