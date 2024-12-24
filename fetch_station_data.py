@@ -26,3 +26,4 @@ if response.status_code == 200:
     print("Response saved to station_data.json")
 else:
     print(f"Failed to get data: {response.status_code}")
+    
